@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #5d6566ad;
     color: #333;
 }
 
@@ -29,7 +29,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -52,14 +52,14 @@ nav ul li a:visited {
 
 nav ul li a:hover,
 nav ul li a.activo {
-    background: #555;
-    color: lightblue;
+    background: #cac2c2;
+    color: rgb(29, 32, 32);
     border-radius: 5px;
     text-decoration-line: none;
 }
 
 nav ul li a:active {
-    color: #c5dadd;
+    color: #e9eff0;
 }
 
 main {
@@ -67,7 +67,7 @@ main {
 }
 
 section {
-    background: #fff;
+    background: #ecf5f4d2;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -82,19 +82,19 @@ p {
 .cancion-lista li { 
     margin: 10px 0; 
     padding: 8px 12px;
-    border-left: 4px solid darkblue; 
+    border-left: 4px solid rgba(125, 161, 214, 0.842); 
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #7494911a;
 }
 .cancion-lista a:link {
     text-decoration-line: none;
-    color: #0066cc;
+    color: #2b89e7c2;
     font-weight: bold;
     font-size: 1.1em;
 }
-.cancion-lista a:visited { color: #1061cc; }
-.cancion-lista a:hover { color: lightblue; text-decoration-line: none; }
-.cancion-lista a:active { color: lightgreen; }
+.cancion-lista a:visited { color: #11407e; }
+.cancion-lista a:hover { color: rgba(64, 123, 190, 0.521); text-decoration-line: none; }
+.cancion-lista a:active { color: rgb(199, 230, 248); }
 
 .contenido-flex {
     display: flex;
@@ -119,11 +119,11 @@ p {
     text-align: justify;
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #4f6a85;
-    border: 2px solid #b9cac960;
+    color: #293036c9;
+    border: 2px solid #abb1b0f5;
     padding: 20px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #ffffff83;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -157,6 +157,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 15px;
+    background-color: #f9fbfcb6;
 }
 
 th, td {
@@ -180,7 +181,7 @@ th {
 }
 
 .encabezado {
-    background-color: #111;
+    background-color: #333;
     color: #fff;
     font-size: 20px;
 }
@@ -268,8 +269,8 @@ form button:hover { background: #555; }
     max-width: 650px;
     margin: 18px auto 5px auto;
     padding: 18px 24px;
-    background-color: #ffffff;
-    border: 2px solid #b9cac960;
+    background-color: #fcfcfce1;
+    border: 2px solid #306d69ab;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     color: #4f6a85;
@@ -279,8 +280,8 @@ form button:hover { background: #555; }
 }
 
 .faq-contenedor {
-    background-color: #ffffff;
-    border: 1.5px solid #b9cac960;
+    background-color: #f2f5f7fa;
+    border: 1.5px solid #d5dbdddc;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     margin-top: 15px;
@@ -288,7 +289,7 @@ form button:hover { background: #555; }
 }
 
 .faq-item {
-    border-bottom: 1.5px solid #b9cac960;
+    border-bottom: 1.5px solid #e3ececd7;
     transition: background-color 0.2s ease;
 }
 
@@ -305,7 +306,7 @@ form button:hover { background: #555; }
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #2c3e50;
+    color: #2d445c;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -313,7 +314,7 @@ form button:hover { background: #555; }
 }
 
 .faq-item .faq-btn:hover {
-    background-color: #f8f9fa;
+    background-color: #f8f9fae1;
 }
 
 .faq-contenido {
@@ -325,14 +326,14 @@ form button:hover { background: #555; }
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #3e4446;
     text-align: justify;
 }
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 0.9em;
-    color: #666;
+    color: #ffffff;
 }
 
 footer p {
