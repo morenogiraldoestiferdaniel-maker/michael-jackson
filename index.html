@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jackson - El Rey del Pop</title>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Michael Jackson</h1>
+        <p>El Rey del Pop</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#discografia">Discografía</a></li>
+            <li><a href="#canciones">Top 4</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="pags/thriller.html">Thriller</a></li>
+            <li><a href="pags/billie-jean.html">Billie Jean</a></li>
+            <li><a href="pags/beat-it.html">Beat It</a></li>
+            <li><a href="pags/smooth-criminal.html">Smooth Criminal</a></li>
+            <li><a href="https://www.michaeljackson.com/" target="_blank">Sitio Oficial</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <img src="imagenes/portada.jpg" alt="Michael Jackson">
+            <p><strong>Michael Joseph Jackson</strong> (Gary, Indiana, 29 de agosto de 1958 - Los Ángeles, 25 de junio de 2009) fue un cantante, compositor, bailarín y filántropo estadounidense. Conocido como el <strong>"Rey del Pop"</strong>, sus contribuciones a la música, la danza y la moda lo convirtieron en una figura global durante más de cuatro décadas.</p>
+            <p>Comenzó su carrera a principios de los años 60 como miembro de los <em>Jackson 5</em>, donde destacó como vocalista principal. En 1979 inició su carrera en solitario con el álbum <em>Off the Wall</em>. En 1982 lanzó <em>Thriller</em>, considerado el álbum más vendido de todos los tiempos. Popularizó pasos como el <em>Moonwalk</em> y revolucionó el formato del video musical.</p>
+        </section>
+
+        <section id="discografia">
+            <h2>Discografía en solitario</h2>
+            <div class="tabla-contenedor">
+                <table class="miTabla">
+                    <tr>
+                        <th class="encabezado">ÁLBUMES ESTUDIO PRINCIPALES</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="interna">
+                                <tr>
+                                    <th>Álbum</th>
+                                    <th>Año</th>
+                                    <th>Sencillo Destacado</th>
+                                </tr>
+                                <tr>
+                                    <td>Off the Wall</td>
+                                    <td>1979</td>
+                                    <td>Don't Stop 'Til You Get Enough</td>
+                                </tr>
+                                <tr>
+                                    <td>Thriller</td>
+                                    <td>1982</td>
+                                    <td>Billie Jean / Thriller / Beat It</td>
+                                </tr>
+                                <tr>
+                                    <td>Bad</td>
+                                    <td>1987</td>
+                                    <td>Smooth Criminal</td>
+                                </tr>
+                                <tr>
+                                    <td>Dangerous</td>
+                                    <td>1991</td>
+                                    <td>Black or White</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="canciones">
+            <h2>Mejores Canciones</h2>
+            <ul class="cancion-lista">
+                <li><a href="pags/thriller.html">1. Thriller (1982)</a> - El fenómeno musical y cinematográfico del pop.</li>
+                <li><a href="pags/billie-jean.html">2. Billie Jean (1982)</a> - Línea de bajo dominante y debut del Moonwalk.</li>
+                <li><a href="pags/beat-it.html">3. Beat It (1982)</a> - Fusión de pop y hard rock con un solo de guitarra histórico.</li>
+                <li><a href="pags/smooth-criminal.html">4. Smooth Criminal (1987)</a> - Relato misterioso con una coreografía inolvidable.</li>
+            </ul>
+        </section>
+
+        <section id="registro">
+            <h2>Registro al Club de Fans</h2>
+            <form action="pags/registro.html" method="get">
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="Usuario" placeholder="Escribe tu usuario" required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="Clave" placeholder="Escribe tu contraseña" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="Correo" placeholder="nombre@correo.com" required>
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="Edad" min="10" max="99" placeholder="Escribe tu edad" required>
+
+                <label for="artista">Artista:</label>
+                <input type="text" id="artista" name="Artista" value="Michael Jackson" readonly>
+
+                <p><strong>Canción favorita:</strong></p>
+                <label class="opcion"><input type="radio" name="Cancion" value="Thriller" required> Thriller</label>
+                <label class="opcion"><input type="radio" name="Cancion" value="Billie Jean"> Billie Jean</label>
+                <label class="opcion"><input type="radio" name="Cancion" value="Beat It"> Beat It</label>
+                <label class="opcion"><input type="radio" name="Cancion" value="Smooth Criminal"> Smooth Criminal</label>
+
+                <p><strong>Quiero recibir información sobre:</strong></p>
+                <label class="opcion"><input type="checkbox" name="Info" value="Discografía"> Discografía</label>
+                <label class="opcion"><input type="checkbox" name="Info" value="Conciertos"> Conciertos</label>
+                <label class="opcion"><input type="checkbox" name="Info" value="Curiosidades"> Curiosidades</label>
+
+                <br>
+
+                <label class="opcion"><input type="checkbox" name="Acepto" value="si" required> Acepto los términos y condiciones</label>
+
+                <input type="hidden" name="Origen" value="index">
+
+                <input type="submit" value="Registrarme">
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Preguntas Frecuentes:</h2>
+            <div class="faq-contenedor">
+                <div class="faq-item">
+                    <button class="faq-btn">¿Cuál es el álbum más exitoso de su carrera?<span>+</span></button>
+                    <div class="faq-contenido oculto">
+                        <p>Thriller (1982) es el álbum más vendido de todos los tiempos a nivel mundial, rompiendo récords globales
+                            y consolidando a Michael Jackson como el Rey del Pop.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">¿En qué año se estrenó el videoclip "Thriller"?<span>+</span></button>
+                    <div class="faq-contenido oculto">
+                        <p>El cortometraje musical de "Thriller" se estrenó en diciembre de 1983. Con una duración cercana a los 
+                            14 minutos, revolucionó por completo la industria de los vídeos musicales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">¿Cuál fue el primer gran éxito en solitario de Michael Jackson?<span>+</span></button>
+                    <div class="faq-contenido oculto">
+                        <p>Aunque brilló desde niño con los Jackson 5, su gran consagración como solista llegó con el 
+                            álbum Off the Wall (1979) y su sencillo principal "Don't Stop 'Til You Get Enough".
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-btn">¿De dónde surge la inspiración para "Smooth Criminal"?<span>+</span></button>
+                    <div class="faq-contenido oculto">
+                        <p>Destaca por su atmósfera de cine negro inspirada en las novelas detectivescas. Además de su ritmo frenético, 
+                            es mundialmente famosa por su innovadora coreografía y el truco de inclinación antigravedad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#principal" class="boton">Volver al inicio</a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Introducción a la Ingeniería de Sistemas - Michael Jackson.</p>
+    </footer>
+
+</body>
+</html>
