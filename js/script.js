@@ -1,12 +1,13 @@
-const formulario = document.getElementById("formulario");
-if (formulario) {
-    formulario.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const nombre = document.getElementById("nombre").value;
-        const cancion = document.getElementById("cancion").value;
-        document.getElementById("mensaje").textContent =
-            "¡Gracias " + nombre + "! Tu canción favorita es " + cancion + ".";
-    });
+const parametros = new URLSearchParams(window.location.search);
+
+if (parametros.has("Usuario")) {
+    const nombreUsuario = parametros.get("Usuario");
+    const cancionFavorita = parametros.get("Cancion");
+    
+    const mensaje = document.getElementById("bienvenida");
+    if (mensaje) {
+        mensaje.textContent = `¡Bienvenido al Club de Fans, ${nombreUsuario}! Vemos que tu canción favorita es ${cancionFavorita}.`;
+    }
 }
 
 const btnDato = document.getElementById("btn-dato");
