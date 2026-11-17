@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades y Videoclips - Michael Jackson</title>
+    <link rel="icon" href="../imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="principal">Michael Jackson</h1>
+        <p>El Rey del Pop</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Biografía</a>
+        <a href="thriller.html">Thriller</a>
+        <a href="billie-jean.html">Billie Jean</a>
+        <a href="beat-it.html">Beat It</a>
+        <a href="smooth-criminal.html">Smooth Criminal</a>
+        <a href="curiosidades.html" class="activo">Videos y curiosidades</a>
+        <a href="https://www.michaeljackson.com/" target="_blank">Sitio Oficial</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Videoclips</h2>
+            <p>Michael convirtió el video musical en un formato artístico propio. Estos son cuatro de sus clips más recordados.</p>
+            <div class="video-grid">
+                <figure class="video-item">
+                    <div class="video-marco">
+                        <iframe src="https://www.youtube.com/embed/sOnqjkJTMaA" title="Videoclip de Thriller" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption><strong>Thriller</strong> (1983): cortometraje dirigido por John Landis.</figcaption>
+                    <p class="video-enlace"><a href="https://www.youtube.com/watch?v=sOnqjkJTMaA" target="_blank" rel="noopener">Ver en YouTube</a></p>
+                </figure>
+                <figure class="video-item">
+                    <div class="video-marco">
+                        <iframe src="https://www.youtube.com/embed/Zi_XLOBDo_Y" title="Videoclip de Billie Jean" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption><strong>Billie Jean</strong> (1983): estética de cine negro y baldosas que se iluminan al pisarlas.</figcaption>
+                    <p class="video-enlace"><a href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y" target="_blank" rel="noopener">Ver en YouTube</a></p>
+                </figure>
+                <figure class="video-item">
+                    <div class="video-marco">
+                        <iframe src="https://www.youtube.com/embed/oRdxUFDoQe0" title="Videoclip de Beat It" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption><strong>Beat It</strong> (1983): un conflicto entre pandillas resuelto con baile.</figcaption>
+                    <p class="video-enlace"><a href="https://www.youtube.com/watch?v=oRdxUFDoQe0" target="_blank" rel="noopener">Ver en YouTube</a></p>
+                </figure>
+                <figure class="video-item">
+                    <div class="video-marco">
+                        <iframe src="https://www.youtube.com/embed/h_D3VFfhvs4" title="Videoclip de Smooth Criminal" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <figcaption><strong>Smooth Criminal</strong> (1988): parte de la película <em>Moonwalker</em>.</figcaption>
+                    <p class="video-enlace"><a href="https://www.youtube.com/watch?v=h_D3VFfhvs4" target="_blank" rel="noopener">Ver en YouTube</a></p>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Curiosidades</h2>
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Siete éxitos de un solo álbum</h3>
+                    <p>Siete sencillos de <em>Thriller</em> llegaron al Top 10 del Billboard Hot 100, algo inédito para un álbum en esa época.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Un video en el archivo de cine</h3>
+                    <p>En 2009, el cortometraje de <em>Thriller</em> fue el primer video musical incluido en el Registro Nacional de Cine de Estados Unidos.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>El guante de una sola mano</h3>
+                    <p>El guante blanco con lentejuelas se convirtió en su sello personal tras su actuación en <em>Motown 25</em>, en 1983.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Un pionero de los efectos digitales</h3>
+                    <p>El video de <em>Black or White</em> (1991) popularizó el "morphing": rostros de distintas personas que se transforman unos en otros.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Un accidente en un comercial</h3>
+                    <p>En 1984, durante la grabación de un anuncio de Pepsi, la pirotecnia le provocó quemaduras en el cuero cabelludo.</p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Rompiendo barreras en MTV</h3>
+                    <p>El video de <em>Billie Jean</em> fue de los primeros de un artista afroamericano en tener rotación frecuente en MTV.</p>
+                </article>
+            </div>
+
+            <button id="btn-curiosidad" class="boton">Mostrar una curiosidad al azar</button>
+            <p id="curiosidad-azar" class="dato-curioso oculto" aria-live="polite"></p>
+        </section>
+
+        <div class="navegacion-cancion">
+            <a href="../index.html#canciones" class="boton">&laquo; Todas las canciones</a>
+            <a href="../index.html" class="boton">Inicio &raquo;</a>
+        </div>
+
+        <a href="#principal" class="boton">Volver al inicio</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Página educativa creada sobre Michael Jackson.</p>
+    </footer>
+</body>
+</html>

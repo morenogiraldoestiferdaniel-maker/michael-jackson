@@ -58,3 +58,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+const btnCuriosidad = document.getElementById("btn-curiosidad");
+if (btnCuriosidad) {
+    const tarjetas = document.querySelectorAll(".tarjeta");
+    const salida = document.getElementById("curiosidad-azar");
+    let ultimo = -1;
+
+    btnCuriosidad.addEventListener("click", function () {
+        let i;
+        do {
+            i = Math.floor(Math.random() * tarjetas.length);
+        } while (i === ultimo && tarjetas.length > 1);
+        ultimo = i;
+
+        salida.textContent = tarjetas[i].querySelector("p").textContent;
+        salida.classList.remove("oculto");
+        btnCuriosidad.textContent = "Mostrar otra curiosidad";
+    });
+}
